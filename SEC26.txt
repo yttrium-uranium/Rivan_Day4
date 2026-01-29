@@ -248,7 +248,7 @@ subjectAltName = @alt_names
 [ alt_names ]
 DNS.1 = www.rivancorp.com
 DNS.2 = rivancorp.com
-IP.1  = 192.168.102.200
+IP.1  = 192.168.102.100
 ~~~
 
 
@@ -409,7 +409,7 @@ sudo yum install lftp
 
 !@NetOps
 cd /certs
-cat netops-ca.crt netops-subca.crt grant-linux.pem > fullchain.pem
+cat netops-ca.crt netops-subca.crt > fullchain.pem
 lftp -u administrator [IP ADDRESS]
 set ssl:ca-file fullchain.pem
 set ftp:ssl-force true
