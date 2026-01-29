@@ -22,7 +22,7 @@ SETUP
 !@NetOps
 mkdir /certs;cd /certs
 
-
+ 
 
 In order to create an SSL Cert, Certificates MUST be configured.
 
